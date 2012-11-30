@@ -19,3 +19,5 @@ The task is to take 3-4 architectural patterns per team member from either the [
 Good luck! :metal:
 
 
+
+Also, here's Katrina: http://www.youtube.com/watch?v=J4dlF0kcThQ . :cupid:

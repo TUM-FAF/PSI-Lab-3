@@ -1,11 +1,11 @@
 Table Data Gateway
-It is implemented in my system in the class ConnectToDatabase that it is a gateway that holds all the SQL for accessing a single table or view: selects, inserts, updates, and deletes. The other code:Server class calls thise database methods. As a benefit we are avoiding introdusing SQL queries as a paramiter for methods.
-		Service Layer
+It is implemented in my system in the class ConnectToDatabase that it is a gateway that holds all the SQL for accessing a single table or view: selects, inserts, updates, and deletes. The other code: Server class calls these database methods. As a benefit we are avoiding introducing SQL queries as a parameter for methods.
+Service Layer
 In my system I have used three layers:
--	Database layer- connecting to database and retrieve information;
--	Server layer -  image recognition, email sending;
--	 Client layer- Sending the image to server.
+- Database layer- connecting to database and retrieve information;
+- Server layer - image recognition, email sending;
+- Client layer- Sending the image to server.
 The benefits for this architecture are that my system becomes more flexible and easy to understand. Also client and Server have their own interface. 
 Pessimistic Offline Lock
 Prevents conflicts between concurrent business transactions by allowing only one business transaction at a time to access data.
-I'm using PostgresSQL by default at the end of each qery a commit is applied and I only have a select statment therefore I think there is no need to to use this arhitectural pattern. Pessimistic Offline Lock is used to work with long transactions.
+I'm using PostgresSQL by default at the end of each query a commit is applied and I only have a select statement therefore I think there is no need to use this architectural pattern. Pessimistic Offline Lock is used to work with long transactions.

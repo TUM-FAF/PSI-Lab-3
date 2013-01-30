@@ -1,0 +1,21 @@
+Table Data Gateway
+It is implemented in my system in the class ConnectToDatabase that it is a gateway t
+hat holds all the SQL for accessing a single table or view: selects, inserts, updates, 
+and deletes.  As a benefit we are avoiding introducing SQL queries as a parameter for 
+methods.
+
+
+
+
+Pessimistic Offline Lock
+Prevents conflicts between concurrent business transactions by allowing only one 
+business transaction at a time to access data. Since I used MySQL by default at the 
+end of each query a commit is applied and I only have a select statement therefore I 
+think there is no need to use this architectural pattern. Pessimistic Offline Lock is 
+used to work with long transactions.
+
+Other code has been split into several pieces therefore bringing an explicit separation 
+of a large method, this code becoems much more comprehensible.
+
+The KeyBoardToFile functioality is not really a big ugly code chunk, it is in fact 
+quite small, so it doesn't need that much refactoring. :) 
